@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choice Johnson — Meesterschap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <input type="checkbox" id="toggle-order" hidden>
+
+  <div id="bg-text" aria-hidden="true">
+    <h1 id="bg-name">Choice Johnson 
+        
+    </h1>
+    <div id="bg-line"></div>
+    <p id="bg-sub">Meesterschap</p>
+  </div>
+
+  <div id="ordered-view">
+    <div id="ordered-body">
+      <div id="ordered-content">
+        <h2 id="ordered-heading">I'm Choice<br>This is my blog :)</h2>
+        <p id="ordered-p">Part of the WDD Meesterschap</p>
+        <div id="ordered-grid">
+            <a class="ordered-item" href="subjects.html#sprintnul">
+                <div class="ordered-item-name">Sprint 0</div>
+                <div class="ordered-item-sub">The start</div>
+            </a>
+            <a class="ordered-item" href="subjects.html#css">
+                <div class="ordered-item-name">CSS</div>
+                <div class="ordered-item-sub">CSS to the rescue</div>
+            </a>
+            <a class="ordered-item" href="subjects.html#bt">
+                <div class="ordered-item-name">BT</div>
+                <div class="ordered-item-sub">Browser Technology</div>
+            </a>
+            <a class="ordered-item" href="subjects.html#hcd">
+                <div class="ordered-item-name">HCD</div>
+                <div class="ordered-item-sub">Human Centered Design</div>
+            </a>
+            <a class="ordered-item" href="subjects.html#hackathon">
+                <div class="ordered-item-name">Hackathon</div>
+                <div class="ordered-item-sub">Coding speedrun</div>
+            </a>
+            <a class="ordered-item" href="subjects.html#api">
+                <div class="ordered-item-name">API</div>
+                <div class="ordered-item-sub">Building with data</div>
+            </a>
+            <a class="ordered-item" href="forum.html">
+                <div class="ordered-item-name">Weekly Nerd</div>
+                <div class="ordered-item-sub">Guestspeakers insights</div>
+            </a>
+            <a class="ordered-item" href="#">
+
+            </a>
+            <a class="ordered-item" href="#">
+       
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div popover="manual" id="win-css" class="win subject">
+    <div class="win-bar">
+      <span class="win-title">CSS</span>
+      <button class="win-x" popovertarget="win-css" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">CSS</p>
+      <p class="win-sub">CSS to the rescue</p>
+      <p class="win-msg">An unexpected style has been applied. The cascade is cascading. Nothing is where it should be.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="css.html">Open CSS →</a>
+        <button class="wbtn" popovertarget="win-css" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-hcd" class="win subject">
+    <div class="win-bar">
+      <span class="win-title">HCD</span>
+      <button class="win-x" popovertarget="win-hcd" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">HCD</p>
+      <p class="win-sub">Human Centered Design</p>
+      <p class="win-msg">Exclusive design principles? NONSENSE!</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="hcd.html">Open HCD →</a>
+        <button class="wbtn" popovertarget="win-hcd" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-api" class="win subject">
+    <div class="win-bar">
+      <span class="win-title">API — The Space Above</span>
+      <button class="win-x" popovertarget="win-api" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">API</p>
+      <p class="win-sub">Building with Astro</p>
+      <p class="win-msg">Too many requests. The data has escaped. Status: 418. The server is a teapot. This is fine.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="api.html">Open API →</a>
+        <button class="wbtn" popovertarget="win-api" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-bt" class="win subject">
+    <div class="win-bar">
+      <span class="win-title">BT — chooo chooo</span>
+      <button class="win-x" popovertarget="win-bt" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Browser Tech</p>
+      <p class="win-sub">Validation</p>
+      <p class="win-msg">The NS got taken over by the overheid oh no. Seems like the prices will be even higher.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="bt.html">Open BT →</a>
+        <button class="wbtn" popovertarget="win-bt" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-geek" class="win subject">
+    <div class="win-bar">
+      <span class="win-title">Weekly Geek — Too early</span>
+      <button class="win-x" popovertarget="win-geek" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Sprint 0</p>
+      <p class="win-sub">The start of WDD</p>
+      <p class="win-msg">Show what you've got.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="forum.html">Open Sprint 0 →</a>
+        <button class="wbtn" popovertarget="win-geek" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-nerd" class="win subject">
+    <div class="win-bar">
+      <span class="win-title">NERD SPOTTED!!</span>
+      <button class="win-x" popovertarget="win-nerd" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Weekly Nerd</p>
+      <p class="win-sub">Weekly nerd talks</p>
+      <p class="win-msg">Brain capacity exceeded during talk. Speaker went 15 minutes over. Notes: chaotic.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="forum.html">Open Weekly Nerd →</a>
+        <button class="wbtn" popovertarget="win-nerd" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-hack" class="win subject">
+    <div class="win-bar">
+      <span class="win-title">SRON</span>
+      <button class="win-x" popovertarget="win-hack" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Hackathon</p>
+      <p class="win-sub">Entering The VOID</p>
+      <p class="win-msg">I came here to code and somehow got involved with black holes? Anyway.. my team won!!!</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="subjects.html#hackathon">Open Hackathon →</a>
+        <button class="wbtn" popovertarget="win-hack" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-leer" class="win subject">
+    <div class="win-bar">
+      <span class="win-title">About me</span>
+      <button class="win-x" popovertarget="win-leer" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Leerdoelen</p>
+      <p class="win-sub">Wat wil ik leren</p>
+      <p class="win-msg">Tja hier moet ik nog iets op verzinnen</p>
+      <div class="win-btns">
+        <!-- <a class="wbtn primary" href="subjects.html#hackathon">Open Hackathon →</a> -->
+        <button class="wbtn" popovertarget="win-hack" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div popover="manual" id="win-forum" class="win">
+    <div class="win-bar">
+      <span class="win-title">FORUM — TALKS ARCHIVE</span>
+      <button class="win-x" popovertarget="win-forum" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">The Forum</p>
+      <p class="win-sub">Weekly Nerd Talks</p>
+      <p class="win-msg">Report errors found on this website.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="forum.html">Open Forum →</a>
+        <button class="wbtn" popovertarget="win-forum" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- random teksten voor js-->
+
+  <div popover="manual" id="deco-1" class="win deco">
+    <div class="win-bar"><span class="win-title">SNOOZE.EXE — FATAL ERROR</span><button class="win-x" popovertarget="deco-1" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">Choice has hit snooze way too many times </p>
+    <div class="win-btns">
+        <button class="wbtn" popovertarget="deco-1" popovertargetaction="hide">Dismiss</button>
+    </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-2" class="win deco">
+    <div class="win-bar"><span class="win-title">WARNING — DEADLINE APPROACHING</span><button class="win-x" popovertarget="deco-2" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">One or more deadlines are critically close. Sleep has been deprecated.</p><div class="win-btns"><button class="wbtn" popovertarget="deco-2" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div popover="manual" id="deco-3" class="win deco">
+    <div class="win-bar"><span class="win-title">SYSTEM — LOW MEMORY</span><button class="win-x" popovertarget="deco-3" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">Your brain is running low on available memory. Consider closing 47 browser tabs.</p><div class="win-btns"><button class="wbtn" popovertarget="deco-3" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div popover="manual" id="deco-4" class="win deco">
+    <div class="win-bar"><span class="win-title">ISSUE — STARTOVER.EXE</span><button class="win-x" popovertarget="deco-4" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">Choice has scrapped and started over for the 4th time this week. You're behind. Maybe stick to one idea..</p><div class="win-btns"><button class="wbtn" popovertarget="deco-4" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div popover="manual" id="deco-5" class="win deco">
+    <div class="win-bar"><span class="win-title">NOTICE — FEEDBACK RECEIVED</span><button class="win-x" popovertarget="deco-5" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">"Have you considered starting over?" > feedback from week 4. Still thinking about it.</p><div class="win-btns"><button class="wbtn" popovertarget="deco-5" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div popover="manual" id="deco-6" class="win deco">
+    <div class="win-bar"><span class="win-title">ERROR — GIT CONFLICT</span><button class="win-x" popovertarget="deco-6" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">Merge conflict on main. Cause: unknown. Solution: cry.</p><div class="win-btns"><button class="wbtn" popovertarget="deco-6" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div popover="manual" id="deco-7" class="win deco">
+    <div class="win-bar"><span class="win-title">REMINDER — TAKE PAUZE</span><button class="win-x" popovertarget="deco-7" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">Daily standup in 2 minutes. You haven't started the thing you said you'd do yesterday anyway.</p><div class="win-btns"><button class="wbtn" popovertarget="deco-7" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div popover="manual" id="deco-8" class="win deco">
+    <div class="win-bar"><span class="win-title">WARNING — CAFFEINE LEVELS CRITICAL</span><button class="win-x" popovertarget="deco-8" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">Caffeine level is low. Productivity will decline in approximately 12 minutes. Go to Yusu.</p><div class="win-btns"><button class="wbtn" popovertarget="deco-8" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div popover="manual" id="deco-9" class="win deco">
+    <div class="win-bar"><span class="win-title">SYSTEM — UPDATE AVAILABLE</span><button class="win-x" popovertarget="deco-9" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">A new version of yourself is available. Install now or be reminded every 10 minutes.</p><div class="win-btns"><button class="wbtn" popovertarget="deco-9" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div popover="manual" id="deco-10" class="win deco">
+    <div class="win-bar"><span class="win-title">Weekly Geek</span><button class="win-x" popovertarget="deco-10" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+    <p class="win-msg">Blink twice if you're being held hostage by WooClap</p><div class="win-btns"><button class="wbtn" popovertarget="deco-10" popovertargetaction="hide">Dismiss</button></div></div>
+  </div>
+
+  <div id="controls">
+    <label class="ctrl-btn" for="toggle-order" id="order-label"></label>
+    <button class="ctrl-btn dark" id="forum-btn">Report error →</button>
+  </div>
+
+  <script src="script/main.js"></script>
+  <script src="script/palette.js"></script>
+</body>
+</html>
