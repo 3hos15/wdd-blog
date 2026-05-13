@@ -11,7 +11,7 @@ const positions = [
   { x: w * 0.42, y: h * 0.55 }, 
 ];
  
- 
+// Web Audio API https://chatgpt.com/share/6a043573-d2dc-83eb-8953-18d81f684848
 function beep(freq = 440, duration = 60) {
   try {
     const ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -107,8 +107,8 @@ makeDraggable(forumWin);
 document.getElementById('forum-btn').addEventListener('click', () => {
   if (!reducedMotion) beep(550, 60);
   if (forumWin.matches(':popover-open')) return;
-  openAt(forumWin, Math.max(20, window.innerWidth / 2 - 155), 80);
-});
+  openAt(forumWin, window.innerWidth / 2 - forumWin.offsetWidth / 2, 
+    window.innerHeight / 2 - forumWin.offsetHeight / 2);});
  
 
  

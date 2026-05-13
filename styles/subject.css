@@ -118,6 +118,14 @@ a {
   display: flex;
 }
 
+#nav-hamburger::before {
+    content: '☰';
+  }
+  
+  #nav-toggle-mob:checked ~ nav #nav-hamburger::before {
+    content: '✕';
+  }
+
 .nav-mobile-link {
   padding: 14px 24px;
   font-size: 13px;

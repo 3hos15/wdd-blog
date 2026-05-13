@@ -402,7 +402,6 @@ body {
     font-size: 10px;
   }
 
-  /* Stack all popovers as normal flow elements */
   [popover].win {
     position: relative;
     inset: unset;

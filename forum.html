@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meesterschap Choice Johnson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/forum.css">
+  <link rel="icon" type="image/png" href="images/starcj.png">
+</head>
+<body>
+    
+  <nav id="nav">
+    <a class="nav-logo" href="index.html">Choice Johnson :)</a>
+    <div id="nav-links">
+      <a class="nav-link" href="#weekly-nerd">Weekly Nerd</a>
+      <a class="nav-link" href="#smashing">Smashing Conf</a>
+      <a class="nav-link" href="#web-you-want">The Web You Want</a>
+      <a class="nav-link" href="subjects.html">Subjects</a>
+    </div>
+    <input type="checkbox" id="nav-toggle" hidden>
+    <label for="nav-toggle-mob" id="nav-hamburger" aria-label="Toggle menu"></label>
+  </nav>
+
+  <input type="checkbox" id="nav-toggle-mob" hidden>
+  <div id="nav-mobile">
+    <a class="nav-mobile-link" href="#weekly-nerd">Weekly Nerd</a>
+    <a class="nav-mobile-link" href="#smashing">Smashing Conf</a>
+    <a class="nav-mobile-link" href="#web-you-want">The Web You Want</a>
+    <a class="nav-mobile-link" href="subjects.html">Subjects</a>
+  </div>
+
+  <main id="forum">
+
+    <section class="board" id="weekly-nerd">
+      <div class="board-header">
+        <div class="board-meta">
+          <span class="board-tag">r/weekly-nerd</span>
+          <h2 class="board-title">Weekly Nerd</h2>
+          <p class="board-desc">Something about nerds meeting every week.</p>
+        </div>
+        <div class="board-stats">
+          <span>6 posts</span>
+        </div>
+      </div>
+
+      <!-- Post 1 -->
+      <article class="post" id="post-nerd-1">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-1" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-1">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-1" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                    <img src="images/kilian.png" alt="Kilian Valkhof">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">4 feb</span>
+                  </div>
+                  <h3 class="post-title">Kilian Valkhof — Stop using JavaScript for that</h3>
+                  <p class="post-expand-hint"></p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+              <p>Gebruik niet automatisch JavaScript voor alles. Veel functionaliteiten kunnen tegenwoordig gewoon met HTML en CSS. Hij verwees naar de Rule of Least Power:</p>
+              <ol>
+                <li>eerst HTML</li>
+                <li>dan CSS</li>
+                <li>pas daarna JavaScript</li>
+              </ol>
+              <p>JavaScript is krachtig, maar ook kwetsbaarder en zwaarder voor browsers.</p>
+ 
+              <h4>Polypane</h4>
+              <p>Tool van Kilian die helpt bij responsive design, gratis voor studenten. Ironisch genoeg is het gebouwd met JavaScript — dus hij is niet anti-JS.</p>
+ 
+              <h4>React / JSX</h4>
+              <p>Voor React developers: JSX is eigenlijk een dialect van HTML.</p>
+ 
+              <h4>Custom switches</h4>
+              <p>Veel developers bouwen switches met JavaScript (divs + onclick), maar dit kan gewoon met HTML/CSS:</p>
+              <ul>
+                <li><code>checkbox</code> input gebruiken</li>
+                <li><code>appearance: none</code> verwijdert standaard styling</li>
+                <li><code>::before</code> voor custom styling</li>
+                <li><code>:checked</code> voor actieve state</li>
+                <li><code>:focus</code> voor toetsenbordgebruik</li>
+              </ul>
+              <p>Gebruik niet zomaar <code>outline: none</code> zonder alternatief. Safari heeft zelfs een ingebouwde switch-stijl.</p>
+ 
+              <h4>Smooth scrolling / page transitions</h4>
+              <p>Vroeger vaak gedaan met jQuery. Nu kan het simpel met CSS: <code>scroll-behavior: smooth</code>. Gebruik ook <code>prefers-reduced-motion</code> voor mensen die gevoelig zijn voor animaties.</p>
+ 
+              <h4>Accordions</h4>
+              <p>Gebruik <code>&lt;details&gt;</code> om content te verbergen/tonen en <code>&lt;summary&gt;</code> als de altijd zichtbare klikbare titel. Voordelen: werkt zonder JavaScript, toegankelijker, met CSS aanpasbaar. Je kunt het pijltje aanpassen via <code>::marker</code>.</p>
+ 
+              <h4>Dialog</h4>
+              <p><code>&lt;dialog&gt;</code> kan modals vervangen. Nog soms een klein beetje JavaScript nodig, standaard verborgen, kan geanimeerd worden met <code>@starting-style</code>.</p>
+ 
+              <h4>Field sizing</h4>
+              <p>Maakt inputvelden automatisch even groot als hun content. Werkt momenteel in Google Chrome en Safari.</p>
+ 
+              <h4>Select styling</h4>
+              <p>Select-elementen waren vroeger lastig te stylen. Nieuwe mogelijkheden: <code>::picker(select)</code> en <code>appearance: base-select</code>. Hiermee kun je dropdowns beter stylen zonder functionaliteit te verliezen. Werkt momenteel vooral in Google Chrome.</p>
+ 
+              <h4>Scroll-driven animations</h4>
+              <p>Animaties kunnen nu gekoppeld worden aan scrollgedrag via CSS in plaats van JavaScript.</p>
+ 
+              <h4>Belangrijkste takeaway</h4>
+              <p>Gebruik JavaScript alleen wanneer het echt nodig is. Moderne HTML en CSS kunnen veel meer dan developers vaak denken.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="post" id="post-nerd-2">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-2" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-2">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-2" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                    <img src="images/peter.png" alt="Peter Paul Koch">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">19 feb</span>
+                  </div>
+                  <h3 class="post-title">Peter Paul Koch — Alles over browsers</h3>
+                  <p class="post-expand-hint"></p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+              <p>Browsers verbinden gebruikers met het web en moeten verschillende dingen kunnen verwerken:</p>
+              <ul>
+                <li>HTML → structuur van een pagina</li>
+                <li>CSS → styling en layout</li>
+                <li>DOM → programmeerbare versie van HTML voor JavaScript</li>
+                <li>AOM → toegankelijkheid voor bijvoorbeeld screenreaders</li>
+                <li>Browser interface → tabs, zoekbalk etc.</li>
+                <li>JavaScript engine → voert JavaScript uit (apart van de rendering engine)</li>
+              </ul>
+ 
+              <h4>DOM</h4>
+              <p>De DOM is HTML die door JavaScript aangepast kan worden. Als je JavaScript in de browser gebruikt, werk je meestal met de DOM. In Node.js gebruik je meestal geen DOM.</p>
+ 
+              <h4>Parser</h4>
+              <p>Een parser leest code (zoals HTML, CSS en JavaScript) en bepaalt wat alles betekent.</p>
+ 
+              <h4>Layout</h4>
+              <p>De layout engine bepaalt waar elementen staan en hoe groot ze zijn. Layout opnieuw berekenen kost veel performance en kan zorgen voor verspringende elementen ("popcorn layout").</p>
+ 
+              <h4>Rendering engine</h4>
+              <p>Verwerkt HTML en CSS, bouwt de DOM en AOM op en rendert de pagina. Eén rendering engine kan door meerdere browsers worden gebruikt, zoals Blink/Chromium bij:</p>
+              <ul>
+                <li>Google Chrome</li>
+                <li>Microsoft Edge</li>
+                <li>Opera</li>
+                <li>Arc Browser</li>
+              </ul>
+ 
+              <h4>Core vs DOM</h4>
+              <ul>
+                <li>Core JavaScript = basis van de programmeertaal</li>
+                <li>DOM = manier waarop JavaScript HTML-elementen aanpast</li>
+              </ul>
+ 
+              <h4>Render blocking</h4>
+              <p>CSS en JavaScript kunnen het laden van HTML tijdelijk stoppen. Bij scripts kun je dit verbeteren met:</p>
+              <ul>
+                <li>normaal script → doe het nu</li>
+                <li>defer → doe het later</li>
+                <li>async → doe het wanneer het uitkomt</li>
+              </ul>
+              <p>Gebruik meestal defer of async.</p>
+ 
+              <h4>Backward compatibility</h4>
+              <p>Browsers blijven oude code ondersteunen zodat oude websites blijven werken, zoals:</p>
+              <ul>
+                <li>geen doctype</li>
+                <li>&lt;body bgcolor=""&gt;</li>
+                <li>&lt;frameset&gt;</li>
+              </ul>
+ 
+              <h4>Browser als platform</h4>
+              <p>Douglas Crockford noemde browsers: "The most hostile development platforms in the world" — omdat browsers rekening moeten houden met oude systemen, nieuwe technologie, verschillende apparaten en performance.</p>
+ 
+              <h4>Browsergeschiedenis</h4>
+              <ul>
+                <li>1990: eerste browser door Tim Berners-Lee</li>
+                <li>1993: NCSA Mosaic → afbeeldingen</li>
+                <li>1994: Netscape Navigator</li>
+                <li>1995: Internet Explorer en Opera</li>
+                <li>2003: Safari</li>
+                <li>2004: Mozilla Firefox</li>
+                <li>2008: Google Chrome</li>
+                <li>2024: Ladybird</li>
+              </ul>
+ 
+              <h4>Kernpunt</h4>
+              <p>Browsers lijken simpel, maar doen veel achter de schermen: code lezen, pagina's opbouwen, toegankelijkheid regelen en oude websites blijven ondersteunen.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="post" id="post-nerd-3">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-3" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-3">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-3" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                <img src="images/nils.png" alt="Nils Binder">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">4 mrt</span>
+                  </div>
+                  <h3 class="post-title">Nils Binder — 9elements</h3>
+                  <p class="post-expand-hint"></p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+              <p>Nils Binder is UX designer en frontend developer bij 9elements. Zijn talk ging over hoe je creativiteit kunt combineren met de meer gestructureerde werkwijze van bedrijven.</p>
+ 
+              <h4>Design tools door de jaren heen</h4>
+              <p>Vroeger werden websites vaak ontworpen in Adobe Photoshop, wat minder aansloot op hoe websites daadwerkelijk gebouwd werden. Nu wordt veel gewerkt met Figma, wat meer lijkt op hoe CSS werkt omdat het beter inspeelt op layouts en componenten.</p>
+              <p>Hij maakte ook een grap dat Tailwind + ChatGPT + Figma de "holy trinity of boredom" is, omdat veel websites daardoor op elkaar gaan lijken.</p>
+ 
+              <h4>Denk in onderdelen, niet pixels</h4>
+              <p>In plaats van obsessief naar pixels te kijken, moet je kijken naar grotere onderdelen en componenten van een design.</p>
+              <ul>
+                <li>focus op structuur</li>
+                <li>focus op herbruikbare onderdelen</li>
+                <li>niet op perfecte pixel placement</li>
+              </ul>
+ 
+              <h4>CSS Grid & whitespace</h4>
+              <p>Hij liet zien hoe je de <code>fr</code> unit in CSS Grid kunt gebruiken om witruimte beter te verdelen binnen layouts. Dit maakt layouts flexibeler.</p>
+ 
+              <h4>Creatieve CSS voorbeelden</h4>
+              <p>Hij liet een soort flipbook-effect zien dat gemaakt werd met afbeeldingen, CSS animations en de <code>steps()</code> function. Dit zorgde voor een frame-by-frame animatie effect.</p>
+ 
+              <h4>Subgrid</h4>
+              <p>Hij besprak ook subgrid: een grid binnen een ander grid waardoor child elementen dezelfde grid structuur kunnen volgen. Dit helpt bij consistente layouts.</p>
+ 
+              <h4>Handige selectors</h4>
+              <p>De CSS <code>::first-line</code> selector kwam ook voorbij. Hiermee kun je alleen de eerste regel van tekst stylen.</p>
+ 
+              <h4>View Transitions</h4>
+              <p>Hij noemde ook de View Transitions API, waarmee je soepelere overgangen tussen verschillende pagina's kunt maken.</p>
+ 
+              <h4>Websites/projecten</h4>
+              <ul>
+                <li>bonabry.de</li>
+                <li>9elements / bonamic.de</li>
+              </ul>
+ 
+              <h4>Belangrijkste takeaway</h4>
+              <p>CSS wordt steeds krachtiger waardoor je creatievere websites kunt maken zonder afhankelijk te zijn van zware design tools of JavaScript. Denk meer in systemen en componenten in plaats van losse pixels.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="post" id="post-nerd-4">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-4" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-4">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-4" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                    <img src="images/robbert.png" alt="Robbert">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">12 mrt</span>
+                  </div>
+                  <h3 class="post-title">Robbert & Yolijn — Toegankelijke formulieren</h3>
+                  <p class="post-expand-hint"></p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+              <p>Een formulier moet een duidelijke flow hebben:</p>
+              <ol>
+                <li>introductie/uitleg</li>
+                <li>benodigde informatie invullen</li>
+                <li>gebruiker laat gegevens controleren</li>
+                <li>foutmeldingen tonen na verzenden</li>
+                <li>duidelijke bevestiging na succesvolle verzending</li>
+              </ol>
+ 
+              <h4>Introductie</h4>
+              <p>Maak vooraf duidelijk:</p>
+              <ul>
+                <li>hoe lang het formulier duurt (bijv. 5 minuten)</li>
+                <li>hoeveel stappen er zijn (Stap 1 van 4)</li>
+                <li>of gebruikers nog documenten moeten opsturen</li>
+              </ul>
+              <p>De tijdsinschatting moet realistisch zijn.</p>
+ 
+              <h4>Validatie & feedback</h4>
+              <p>Bij fouten: rode outlines, duidelijke foutmeldingstekst, samenvatting van fouten na verzenden. Bij succes: groene feedback, duidelijke bevestiging, uitleg over vervolgstappen.</p>
+ 
+              <h4>Vraag alleen noodzakelijke informatie</h4>
+              <ul>
+                <li>geslacht is vaak niet nodig</li>
+                <li>vraag geen e-mailadres twee keer</li>
+                <li>gebruik geen onduidelijke afkortingen</li>
+                <li>leg uit waarom informatie nodig is</li>
+              </ul>
+ 
+              <h4>Labels & inputvelden</h4>
+              <ul>
+                <li>zet labels boven invoervelden</li>
+                <li>maak labels klikbaar door ze aan inputs te koppelen</li>
+                <li>houd labels kort en duidelijk</li>
+                <li>placeholders zijn geen vervanging voor labels</li>
+                <li>gebruik liever "verplicht/niet verplicht" dan alleen een *</li>
+              </ul>
+              <p>Voorbeeld: <code>Voornaam</code> is beter dan <code>voorna(a)m(en)</code></p>
+ 
+              <h4>Design richtlijnen</h4>
+              <ul>
+                <li>duidelijke kleurcontrasten</li>
+                <li>klikbare elementen minimaal 44×44px</li>
+                <li>buttons aan het begin van een regel</li>
+                <li>voortgang altijd bovenaan tonen</li>
+                <li>consistente navigatie (volgende, vorige, annuleren)</li>
+              </ul>
+ 
+              <h4>Gebruiksgemak</h4>
+              <ul>
+                <li>automatisch invullen ondersteunen</li>
+                <li>copy/paste toestaan</li>
+                <li>browser autocomplete ondersteunen</li>
+                <li>voldoende witruimte houden voor autocomplete menu's</li>
+                <li>belangrijke uitleg zichtbaar houden</li>
+              </ul>
+              <p><code>aria-describedby</code> kan gebruikt worden voor extra uitleg.</p>
+ 
+              <h4>Controle stap</h4>
+              <p>Laat gebruikers altijd hun ingevulde gegevens controleren voordat ze definitief verzenden.</p>
+ 
+              <h4>CSS sizing</h4>
+              <p>Gebruik liever <code>inline-size</code> en <code>block-size</code> in plaats van <code>width</code> en <code>height</code>.</p>
+ 
+              <h4>Flexibele validatie</h4>
+              <ul>
+                <li>geef maximale tekens duidelijk aan</li>
+                <li>voorkom onnodige restricties</li>
+                <li>accepteer meerdere invoerformaten</li>
+              </ul>
+              <p>Bijvoorbeeld postcode met of zonder spatie.</p>
+ 
+              <h4>Toetsenbord toegankelijkheid</h4>
+              <p>Een formulier moet volledig zonder muis werken: <code>tab</code>, <code>shift + tab</code>, pijltjestoetsen. Daarnaast: logische tabvolgorde, duidelijke focus states en radio buttons bedienbaar met pijltjes.</p>
+ 
+              <h4>Screenreaders & toegankelijkheid</h4>
+              <p>Test formulieren met echte gebruikers. Screenreaders moeten kunnen voorlezen: labels, beschrijvingen, verplichte velden, foutmeldingen, formulierstappen en bevestiging na verzending. Feedback moet helpen, niet storend zijn.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 5 -->
+      <article class="post" id="post-nerd-5">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-5" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-5">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-5" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                    <img src="images/rosa.png" alt="Rosa">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">2 apr</span>
+                  </div>
+                  <h3 class="post-title">Rosa — Hackers United</h3>
+                  <p class="post-expand-hint"></p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+              <p>Rosa sprak over digitale onafhankelijkheid en duurzaamheid binnen technologie.</p>
+ 
+              <h4>Planned obsolescence</h4>
+              <p>Apparaten worden steeds moeilijker te repareren of gaan sneller "verouderd" aanvoelen. Dit zorgt ervoor dat mensen:</p>
+              <ul>
+                <li>sneller nieuwe apparaten kopen</li>
+                <li>afhankelijker worden van grote techbedrijven</li>
+                <li>minder controle hebben over hun eigen apparaten</li>
+              </ul>
+              <p>Ze koppelde dit aan de afhankelijkheid van vooral Amerikaanse Big Tech bedrijven.</p>
+ 
+              <h4>Cloud en servers</h4>
+              <p>De "cloud" is eigenlijk gewoon een plek waar websites en diensten gehost worden, vaak zonder dat gebruikers daar veel controle over hebben. Een server is in principe:</p>
+              <ul>
+                <li>een computer</li>
+                <li>verbonden aan een router</li>
+                <li>die informatie opslaat</li>
+                <li>en verstuurt naar gebruikers</li>
+              </ul>
+ 
+              <h4>Duurzamere hosting</h4>
+              <p>Node9 werd genoemd als voorbeeld van een meer eco-driven server/initiatief.</p>
+ 
+              <h4>Static Site Generators</h4>
+              <p>Static site generators kunnen duurzamer zijn omdat ze minder serverkracht nodig hebben.</p>
+              <ul>
+                <li>minder belasting op servers</li>
+                <li>als alles faalt blijft markdown vaak nog leesbaar</li>
+                <li>overzichtelijke code</li>
+              </ul>
+              <p>Voorbeeld: <code>Eleventy (11ty)</code></p>
+ 
+              <h4>Zelf hosten</h4>
+              <p>Rosa moedigde aan om meer zelf te hosten, zoals Git repositories, messaging platforms en websites. Zo word je minder afhankelijk van grote platforms.</p>
+ 
+              <h4>DIY / DIWO</h4>
+              <p>DIY (Do It Yourself) en DIWO (Do It With Others) stonden centraal: zelf leren maken, maar ook samen kennis delen. Er werden ook community avonden genoemd zoals donderdagavond en vrijdag sociale avond.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 6 -->
+      <article class="post" id="post-nerd-6">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-6" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-6">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-6" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                    <img src="images/johan.png" alt="Johann Huijkman">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">9 apr</span>
+                  </div>
+                  <h3 class="post-title">Johann Huijkman — Toegankelijkheid & gebruikerservaring </h3>
+                  <p class="post-expand-hint"></p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+              <p>"Je gaat het pas zien als je het doorhebt." En: "Je hoort het pas als je luistert."</p>
+              <p>De kern van de talk: toegankelijkheid begrijp je pas echt wanneer je luistert naar mensen die er dagelijks mee te maken hebben.</p>
+ 
+              <h4>WCAG principes</h4>
+              <p>De vier basisprincipes van WCAG:</p>
+              <ul>
+                <li>Perceivable → content moet waarneembaar zijn</li>
+                <li>Operable → website moet bedienbaar zijn</li>
+                <li>Understandable → informatie moet begrijpelijk zijn</li>
+                <li>Robust → moet werken op verschillende technologieën/hulpmiddelen</li>
+              </ul>
+              <p>WCAG is een handig hulpmiddel, maar niet de enige manier om een website toegankelijk te maken. Belangrijk: test ook met echte gebruikers.</p>
+ 
+              <h4>Screenreaders & alt-tekst</h4>
+              <p>Maak geen onnodige aanpassingen zonder kennis. Praat met mensen die al screenreaders gebruiken, want veel functies bestaan al. Niet elke afbeelding heeft uitgebreide alt-tekst nodig — als de afbeelding decoratief is mag deze leeg zijn (<code>alt=""</code>).</p>
+ 
+              <h4>Martijn — kan bijna niets zien</h4>
+              <p>Problemen: knoppen zonder duidelijke hover/focus states, cookie banners waarbij scrollen niet werkt, slecht contrast, captcha's.</p>
+              <p>Wat helpt: korte en duidelijke tekst, schaalbare content, goed contrast, informatie logisch groeperen, duidelijke focus indicatoren.</p>
+ 
+              <h4>Nauduah — beperkte mobiliteit</h4>
+              <p>Problemen: felle kleuren, te veel informatie tegelijk, slechte concentratie door drukke interfaces, lang moeten zoeken naar informatie.</p>
+              <p>Wat helpt: duidelijke structuur, informatie gegroepeerd, visueel rustige websites, dark mode, gegevens kunnen opslaan.</p>
+ 
+              <h4>Guido — autisme</h4>
+              <p>Problemen: te veel visuele en audio prikkels, harde advertenties, te veel informatie, onduidelijke formuleringen.</p>
+              <p>Wat helpt: rustige layouts, voorspelbaarheid, duidelijke instructies, concrete tekst, weinig afleiding.</p>
+ 
+              <h4>Toepassing op eigen project</h4>
+              <p>Denk na waarom gebruikers met verschillende behoeften mogelijk afhaken bij jouw eigen project en hoe je dat kunt verbeteren.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- 
+         SMASHING CONF -->
+    <section class="board" id="smashing">
+      <div class="board-header">
+        <div class="board-meta">
+          <span class="board-tag">r/smashing-conf</span>
+          <h2 class="board-title">Smashing Conference</h2>
+          <p class="board-desc">Two days. A lot of talks. Here's what happened.</p>
+        </div>
+        <div class="board-stats">
+          <span>2 posts</span>
+        </div>
+      </div>
+
+      <!-- Day 1 -->
+      <article class="post" id="post-smashing-1">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-smashing-1" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-smashing-1">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-smashing-1" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag">Smashing Conf</span>
+            <span class="post-dot">·</span>
+            <span class="post-date">Day 1</span>
+          </div>
+          <h3 class="post-title">Day 1</h3>
+          <div class="post-notes">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex ea deleniti doloribus repellat quis facere architecto? Possimus, officia repudiandae quisquam harum unde perspiciatis! Ullam officiis labore porro ratione perferendis.</p>
+          </div>
+          <div class="post-footer">
+            <span class="post-footer-item">Reply to this thread</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Day 2 -->
+      <article class="post" id="post-smashing-2">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-smashing-2" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-smashing-2">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-smashing-2" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag">Smashing Conf</span>
+            <span class="post-dot">·</span>
+            <span class="post-date">Day 2</span>
+          </div>
+          <h3 class="post-title">Day 2</h3>
+          <div class="post-notes">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad dolorum repudiandae nihil nemo, atque animi reiciendis odio dolores possimus similique adipisci esse incidunt eveniet error molestias, eius quos quaerat repellat.</p>
+          </div>
+          <div class="post-footer">
+            <span class="post-footer-item">Reply to this thread</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!--
+         THE WEB YOU WANT-->
+    <section class="board" id="web-you-want">
+      <div class="board-header">
+        <div class="board-meta">
+          <span class="board-tag">r/the-web-you-want</span>
+          <h2 class="board-title">The Web You Want</h2>
+          <p class="board-desc">But is it really the web YOU want...</p>
+        </div>
+        <div class="board-stats">
+          <span>2 posts</span>
+        </div>
+      </div>
+
+      <!-- Day 1 -->
+      <article class="post" id="post-web-1">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-web-1" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-web-1">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-web-1" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag">The Web You Want</span>
+            <span class="post-dot">·</span>
+            <span class="post-date">Day 1</span>
+          </div>
+          <h3 class="post-title">Day 1</h3>
+          <div class="post-notes">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quam earum iusto inventore iste natus quibusdam architecto veniam sit repellendus, qui blanditiis fuga suscipit delectus sint eligendi necessitatibus accusantium veritatis.</p>
+          </div>
+          <div class="post-footer">
+            <span class="post-footer-item">Reply to this thread</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Day 2 -->
+      <article class="post post--locked" id="post-web-2" aria-disabled="true">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" disabled>▲</button>
+          <span class="vote-count">–</span>
+          <button class="vote-btn down" aria-label="Downvote" disabled>▼</button>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-tag">The Web You Want</span>
+            <span class="post-dot">·</span>
+            <span class="post-date">Day 2</span>
+          </div>
+          <h3 class="post-title">Day 2</h3>
+          <div class="post-notes post-notes--locked">
+            <p class="locked-msg">...</p>
+          </div>
+          <div class="post-footer">
+            <span class="post-footer-item">meow</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <script src="script/palette.js"></script>
+  <script src="script/forum.js"></script>
+</body>
+</html>
