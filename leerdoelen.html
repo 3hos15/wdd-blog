@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leerdoelen — Choice Johnson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/leerdoelen.css">
+  <link rel="icon" type="image/png" href="images/starcj.png">
+</head>
+<body>
+
+  <div id="bg-text" aria-hidden="true">
+    <h1 id="bg-name">Leerdoelen</h1>
+    <div id="bg-line"></div>
+    <p id="bg-sub">Meesterschap</p>
+  </div>
+
+  <div class="folder" id="folder-1" popovertarget="win-leer-1" popovertargetaction="show">
+    <div class="folder-icon"></div>
+    <span class="folder-label">Webtechnologie & CSS</span>
+  </div>
+
+  <div class="folder" id="folder-2" popovertarget="win-leer-2" popovertargetaction="show">
+    <div class="folder-icon"></div>
+    <span class="folder-label">Samenwerken</span>
+  </div>
+
+  <div class="folder" id="folder-3" popovertarget="win-leer-3" popovertargetaction="show">
+    <div class="folder-icon"></div>
+    <span class="folder-label">Reflecteren</span>
+  </div>
+
+  <div class="folder" id="folder-chaos">
+    <div class="folder-icon chaos-icon"></div>
+    <span class="folder-label">?</span>
+  </div>
+
+
+  <div popover="manual" id="win-leer-1" class="win leer">
+    <div class="win-bar">
+      <span class="win-title">Leerdoel 01 — Webtechnologie & CSS</span>
+      <button class="win-x" popovertarget="win-leer-1" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Webtechno-<br>logie & CSS</p>
+      <p class="win-sub">De juiste tool, goed toegepast</p>
+      <p class="win-msg">Bewuste keuzes maken in webtechnologie én mijn front-end vaardigheden uitbreiden. Ik wil begrijpen wanneer HTML, CSS of JavaScript de juiste keuze is, en tegelijk sterker worden in het bouwen van visueel sterke, goed gestructureerde interfaces met moderne CSS-technieken.</p>
+      <div class="win-btns">
+        <button class="wbtn" popovertarget="win-leer-1" popovertargetaction="hide">Sluiten</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-leer-2" class="win leer">
+    <div class="win-bar">
+      <span class="win-title">Leerdoel 02 — Samenwerken</span>
+      <button class="win-x" popovertarget="win-leer-2" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Samen-<br>werken</p>
+      <p class="win-sub">Actief bijdragen aan een groep</p>
+      <p class="win-msg">Actiever en gestructureerder samenwerken met medestudenten. Niet alleen feedback vragen, maar ook feedback geven, samen problemen analyseren en keuzes onderbouwen. Ik wil leren een echte bijdrage te leveren aan een groep in plaats van voornamelijk individueel te werken.</p>
+      <div class="win-btns">
+        <button class="wbtn" popovertarget="win-leer-2" popovertargetaction="hide">Sluiten</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-leer-3" class="win leer">
+    <div class="win-bar">
+      <span class="win-title">Leerdoel 03 — Reflecteren</span>
+      <button class="win-x" popovertarget="win-leer-3" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Reflec-<br>teren</p>
+      <p class="win-sub">Bewuster groeien als developer</p>
+      <p class="win-msg">Regelmatig terugkijken op mijn eigen werkproces en keuzes. Ik wil bijhouden wat ik leer, waarom ik bepaalde beslissingen neem en wat ik een volgende keer anders zou doen. Zo wil ik gerichter groeien in plaats van maar wat aanrommelen.</p>
+      <div class="win-btns">
+        <button class="wbtn" popovertarget="win-leer-3" popovertargetaction="hide">Sluiten</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-l1" class="win deco">
+    <div class="win-bar"><span class="win-title">LEERDOEL STATUS — IN PROGRESS FOREVER</span><button class="win-x" popovertarget="deco-l1" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Leerdoel 1 staat al 3 weken op "in progress". Definitie van done: nog te bepalen.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-l1" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-l2" class="win deco">
+    <div class="win-bar"><span class="win-title">WARNING — TEVEEL MDN TABS</span><button class="win-x" popovertarget="deco-l2" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Je hebt 23 MDN-pagina's open. Geen van hen is volledig gelezen. Dit heet research.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-l2" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-l3" class="win deco">
+    <div class="win-bar"><span class="win-title">FEEDBACK.EXE — ONVERWACHTE FOUT</span><button class="win-x" popovertarget="deco-l3" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Feedback geven aan anderen betekent ook feedback terugkrijgen. Dit stond niet in de planning.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-l3" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-l4" class="win deco">
+    <div class="win-bar"><span class="win-title">NOTICE — CSS TIJDVERLIES</span><button class="win-x" popovertarget="deco-l4" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">4 uur besteed aan een hover-animatie die niemand zal opmerken. Toch blij mee.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-l4" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-l5" class="win deco">
+    <div class="win-bar"><span class="win-title">SYSTEEM — SAMENWERKING DETECTED</span><button class="win-x" popovertarget="deco-l5" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Je hebt een idee gedeeld met een medestudent. Ze vonden het goed. Onverwachte paniek.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-l5" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-l6" class="win deco">
+    <div class="win-bar"><span class="win-title">ERROR — DIV OF SECTION</span><button class="win-x" popovertarget="deco-l6" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Is dit een &lt;div&gt; of een &lt;section&gt;? Antwoord: ja. Leerdoel 1 mislukt.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-l6" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-l7" class="win deco">
+    <div class="win-bar"><span class="win-title">REMINDER — GEEN JS NODIG</span><button class="win-x" popovertarget="deco-l7" popovertargetaction="hide" aria-label="Sluit">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Soms is een link gewoon een &lt;a&gt; en hoeft het echt geen JavaScript component te zijn.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-l7" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <a class="ctrl-btn" href="index.html">← Terug</a>
+  </div>
+
+  <script src="script/leerdoelen.js"></script>
+  <script src="script/palette.js"></script>
+</body>
+</html>

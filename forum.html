@@ -12,24 +12,28 @@
 </head>
 <body>
     
+  <input type="checkbox" id="nav-toggle" hidden>
+
   <nav id="nav">
     <a class="nav-logo" href="index.html">Choice Johnson :)</a>
     <div id="nav-links">
       <a class="nav-link" href="#weekly-nerd">Weekly Nerd</a>
       <a class="nav-link" href="#smashing">Smashing Conf</a>
       <a class="nav-link" href="#web-you-want">The Web You Want</a>
-      <a class="nav-link" href="subjects.html">Subjects</a>
+      <a class="nav-link" href="#css-day">CSS Day</a>
+      <a class="nav-link" href="#meesterproef">Meesterproef</a>
+      <a class="nav-link" href="subjects.html">Subjects↗</a>
     </div>
-    <input type="checkbox" id="nav-toggle" hidden>
-    <label for="nav-toggle-mob" id="nav-hamburger" aria-label="Toggle menu"></label>
+    <label for="nav-toggle" id="nav-hamburger" aria-label="Toggle menu"></label>
   </nav>
 
-  <input type="checkbox" id="nav-toggle-mob" hidden>
   <div id="nav-mobile">
     <a class="nav-mobile-link" href="#weekly-nerd">Weekly Nerd</a>
     <a class="nav-mobile-link" href="#smashing">Smashing Conf</a>
     <a class="nav-mobile-link" href="#web-you-want">The Web You Want</a>
-    <a class="nav-mobile-link" href="subjects.html">Subjects</a>
+    <a class="nav-mobile-link" href="#css-day">CSS Day</a>
+    <a class="nav-mobile-link" href="#meesterproef">Meesterproef</a>
+    <a class="nav-mobile-link" href="subjects.html">Subjects↗</a>
   </div>
 
   <main id="forum">
@@ -42,7 +46,7 @@
           <p class="board-desc">Something about nerds meeting every week.</p>
         </div>
         <div class="board-stats">
-          <span>6 posts</span>
+          <span>9 posts</span>
         </div>
       </div>
 
@@ -67,16 +71,15 @@
                     <span class="post-date">4 feb</span>
                   </div>
                   <h3 class="post-title">Kilian Valkhof — Stop using JavaScript for that</h3>
-                  <p class="post-expand-hint"></p>
+                  <p class="post-expand-hint">Gebruik niet automatisch JavaScript voor alles. Veel functionaliteiten kunnen tegenwoordig gewoon met HTML en CSS.</p>
                 </div>
               </div>
             </summary>
             <div class="post-notes">
-              <p>Gebruik niet automatisch JavaScript voor alles. Veel functionaliteiten kunnen tegenwoordig gewoon met HTML en CSS. Hij verwees naar de Rule of Least Power:</p>
               <ol>
-                <li>eerst HTML</li>
-                <li>dan CSS</li>
-                <li>pas daarna JavaScript</li>
+                <li>Eerst HTML</li>
+                <li>Dan CSS</li>
+                <li>Pas daarna JavaScript</li>
               </ol>
               <p>JavaScript is krachtig, maar ook kwetsbaarder en zwaarder voor browsers.</p>
  
@@ -146,12 +149,11 @@
                     <span class="post-date">19 feb</span>
                   </div>
                   <h3 class="post-title">Peter Paul Koch — Alles over browsers</h3>
-                  <p class="post-expand-hint"></p>
+                  <p class="post-expand-hint">Browsers verbinden gebruikers met het web en moeten verschillende dingen kunnen verwerken.</p>
                 </div>
               </div>
             </summary>
             <div class="post-notes">
-              <p>Browsers verbinden gebruikers met het web en moeten verschillende dingen kunnen verwerken:</p>
               <ul>
                 <li>HTML → structuur van een pagina</li>
                 <li>CSS → styling en layout</li>
@@ -248,13 +250,11 @@
                     <span class="post-date">4 mrt</span>
                   </div>
                   <h3 class="post-title">Nils Binder — 9elements</h3>
-                  <p class="post-expand-hint"></p>
+                  <p class="post-expand-hint">Nils Binder is UX designer en frontend developer bij 9elements. Zijn talk ging over hoe je creativiteit kunt combineren met de meer gestructureerde werkwijze van bedrijven.</p>
                 </div>
               </div>
             </summary>
             <div class="post-notes">
-              <p>Nils Binder is UX designer en frontend developer bij 9elements. Zijn talk ging over hoe je creativiteit kunt combineren met de meer gestructureerde werkwijze van bedrijven.</p>
- 
               <h4>Design tools door de jaren heen</h4>
               <p>Vroeger werden websites vaak ontworpen in Adobe Photoshop, wat minder aansloot op hoe websites daadwerkelijk gebouwd werden. Nu wordt veel gewerkt met Figma, wat meer lijkt op hoe CSS werkt omdat het beter inspeelt op layouts en componenten.</p>
               <p>Hij maakte ook een grap dat Tailwind + ChatGPT + Figma de "holy trinity of boredom" is, omdat veel websites daardoor op elkaar gaan lijken.</p>
@@ -319,7 +319,7 @@
                     <span class="post-date">12 mrt</span>
                   </div>
                   <h3 class="post-title">Robbert & Yolijn — Toegankelijke formulieren</h3>
-                  <p class="post-expand-hint"></p>
+                  <p class="post-expand-hint">Een formulier moet een duidelijke flow hebben — van introductie tot bevestiging na succesvolle verzending.</p>
                 </div>
               </div>
             </summary>
@@ -430,13 +430,11 @@
                     <span class="post-date">2 apr</span>
                   </div>
                   <h3 class="post-title">Rosa — Hackers United</h3>
-                  <p class="post-expand-hint"></p>
+                  <p class="post-expand-hint">Rosa sprak over digitale onafhankelijkheid en duurzaamheid binnen technologie.</p>
                 </div>
               </div>
             </summary>
             <div class="post-notes">
-              <p>Rosa sprak over digitale onafhankelijkheid en duurzaamheid binnen technologie.</p>
- 
               <h4>Planned obsolescence</h4>
               <p>Apparaten worden steeds moeilijker te repareren of gaan sneller "verouderd" aanvoelen. Dit zorgt ervoor dat mensen:</p>
               <ul>
@@ -501,12 +499,11 @@
                     <span class="post-date">9 apr</span>
                   </div>
                   <h3 class="post-title">Johann Huijkman — Toegankelijkheid & gebruikerservaring </h3>
-                  <p class="post-expand-hint"></p>
+                  <p class="post-expand-hint">"Je gaat het pas zien als je het doorhebt." En: "Je hoort het pas als je luistert."</p>
                 </div>
               </div>
             </summary>
             <div class="post-notes">
-              <p>"Je gaat het pas zien als je het doorhebt." En: "Je hoort het pas als je luistert."</p>
               <p>De kern van de talk: toegankelijkheid begrijp je pas echt wanneer je luistert naar mensen die er dagelijks mee te maken hebben.</p>
  
               <h4>WCAG principes</h4>
@@ -543,24 +540,270 @@
           </details>
         </div>
       </article>
+      
+      <!-- Post 7 -->
+      <article class="post" id="post-nerd-7">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-7" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-7">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-7" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                    <img src="images/hansdezwart.png" alt="Hans de Zwart">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">21 mei</span>
+                  </div>
+                  <h3 class="post-title">Hans de Zwart — Privacy </h3>
+                  <p class="post-expand-hint">Privacy is een moeilijk begrip. Veel mensen weten niet dat ze juist wel dingen te verbergen hebben.</p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+              <h4>Privacy</h4>
+              <ul>
+                <li>Individueel recht — jezelf kunnen zijn, je ruimte hebben, met rust gelaten worden</li>
+                <li>Sociaal recht — in elke context anders willen kunnen zijn</li>
+                <li>Democratische noodzaak — autonoom je mening kunnen vormen</li>
+              </ul>
+
+              <p>Wat je wel en niet wilt delen verschilt erg per context. Je deelt dingen met je dokter die je met niemand anders zou willen delen. Je gedraagt je anders bij de familie dan bij je vrienden.</p>
+
+              <p>Helen Nissenbaum: "Privacy moet je zien als contextuele integriteit — er worden geen onverwachte dingen gedeeld met onverwachte partijen."</p>
+
+              <p>Het gaat ook over controle. Je weet niet wat er gebeurt met je gegevens.</p>
+
+              <p>Eigenlijk gewoon common sense over hoe je met elkaar om zou moeten gaan — zo ook doen met (persoons)gegevens. IP-adres is een persoonsgegeven.</p>
+
+              <h4>Grondslagen voor het verwerken van persoonsgegevens</h4>
+              <p>Je moet een reden (grondslag) hebben om persoonsgegevens te gebruiken:</p>
+              <ul>
+                <li>Toestemming — moet vrij en geïnformeerd zijn, en kan worden ingetrokken</li>
+                <li>Noodzakelijk voor het uitvoeren van een overeenkomst</li>
+                <li>Bij een vitaal belang</li>
+                <li>Bij een algemeen belang voor het openbaar gezag</li>
+                <li>Bij een gerechtvaardigd belang</li>
+              </ul>
+              <p>Daarbij geldt <strong>doelbinding</strong>: je mag de data alleen gebruiken voor het doel waarvoor je het verzameld hebt.</p>
+
+              <h4>Rechten van betrokkenen</h4>
+              <ul>
+                <li>Je mag je gegevens inzien, corrigeren en aanvullen</li>
+                <li>Je hebt recht op vergetelheid</li>
+                <li>Je mag je data meenemen naar een andere partij (dataportabiliteit) — veel data is relationeel, wie is de eigenaar?</li>
+              </ul>
+
+              <p>Door de AVG is data over personen niet alleen maar een asset — data over personen is ook een <strong>liability</strong>.</p>
+
+              <h4>Dataminimalisatie</h4>
+              <p>Om aan de wet te voldoen moet je een strategie toepassen van dataminimalisatie: zo min mogelijke gegevens verwerken.</p>
+
+              <h4>Privacy by Design</h4>
+              <p>Hoe kun je de functionaliteit krijgen die je wilt, maar met een garantie van zoveel mogelijk privacy? Vaak met cryptografie en slimme algoritmische oplossingen: hashes, blind signatures, statistical disclosure control, differential privacy, revocable privacy, attribute based credentials, etc.</p>
+              <p>Boek: <em>Privacy by Design</em> — Jaap Henk Hoepman.</p>
+
+              <h4>Privacy op het web</h4>
+              <p>Je bezoek wordt realtime geveild aan andere bedrijven. Zelfs voordat de site geladen is wordt je "profiel" aan de adverteerders verkocht. Is er nog een websitebezoek waarbij Google niet in beeld is? (Google Analytics)</p>
+
+              <p>Meer info: <strong>bitsoffreedom.nl</strong></p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 8 -->
+      <article class="post" id="post-nerd-8">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-8" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-8">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-8" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                    <img src="images/qviertwee.png" alt="Q42">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">Q42</span>
+                  </div>
+                  <h3 class="post-title">Q42 — Design Systems & Digital Agency</h3>
+                  <p class="post-expand-hint">Q42 is een digital agency die zich puur op development richt. Wanneer bedrijven groeien kunnen ze hun eigen expertise niet bijbenen. Q42 geeft ze een boost.</p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+              <h4>Flora — Design System voor Greenchoice</h4>
+              <p>Flora is een design system dat Q42 heeft gemaakt voor Greenchoice. Het bestaande systeem voldeed niet aan de wensen en eisen. Het doel: een design system dat meer gebruikt wordt en de efficiency vergroot.</p>
+
+              <h4>1. Assessment</h4>
+              <p>Eerst een assessment: waarom werkt het niet, wat werkt niet, waar sta je nu, wat is daarvoor nodig? Er werd een framework gemaakt dat het design system opsplitst in vier lagen:</p>
+              <ul>
+                <li>Governance</li>
+                <li>Design language</li>
+                <li>Figma-structuur</li>
+                <li>Front-end implementatie</li>
+              </ul>
+              <p>Daarna een roadmap om de maturity te bepalen. Om alles samen te laten werken: een mental model via Atomic Design. Heel kleine details zijn belangrijk. Onderscheid tussen universal, composite en team-specific composites.</p>
+
+              <h4>2. Grote klanten</h4>
+              <p>Meer stakeholders = meer afhankelijkheden. Voorkom afhankelijkheden door stakeholders zich alleen met problemen te laten bezighouden, niet de oplossingen. Governance wordt prominenter naarmate de afstand tussen business en IT groter is. Veel componenten bleken samen te voegen of te schrappen — minder componenten, meer documentatie.</p>
+
+              <h4>3. Werken met AI</h4>
+              <p>Het verandert heel drastisch, maar: <em>don't hop on the bandwagon</em>. Behandel AI als een peuter — voorbeeld doet volgen.</p>
+              <p><strong>Wanneer wel AI gebruiken:</strong></p>
+              <ul>
+                <li>Bij programmeren voor debuggen</li>
+                <li>Rubber ducking — sparringpartner voor nieuwe ideeën</li>
+                <li>Controle op abstracte onderwerpen (security, performance, onderliggende functionaliteit van tools en frameworks)</li>
+                <li>Boring stuff</li>
+                <li>Herhaaldelijk werk</li>
+              </ul>
+              <p><strong>Wanneer niet:</strong></p>
+              <ul>
+                <li>Als creativiteit vereist is</li>
+                <li>Als je zelf niet weet wat er gebeurt</li>
+                <li>Fun stuff — niet lui worden</li>
+              </ul>
+
+              <h4>4. A to Y</h4>
+              <ul>
+                <li><strong>Make the boundary as small as possible</strong> — out of the box denken, niet alleen op design niveau maar ook in de techniek. Blijven testen ook als je denkt dat je de richtlijnen al volgt.</li>
+                <li><strong>Don't reinvent the wheel</strong> — geen dingen opnieuw doen die al werken. Bijv. het <code>&lt;dialog&gt;</code> element. Geldt ook voor packages (bijv. Embla Carousel). Altijd een goede basis hebben.</li>
+                <li><strong>Remove every excuse</strong> — een audit wees naar de pijnpunten per team en discipline. Toegankelijkheid als default.</li>
+                <li>Align with company strategy</li>
+                <li>Convince leadership</li>
+                <li>Measure success</li>
+              </ul>
+
+              <p>Het resultaat is een design system dat toekomstbestendig is en werkt voor iedereen.</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 9 -->
+      <article class="post" id="post-nerd-9">
+        <div class="vote-col">
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-nerd-9" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-nerd-9">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-nerd-9" data-dir="down">▼</button>
+        </div>
+        <div class="post-body">
+          <details class="post-details" name="nerd">
+            <summary class="post-summary">
+              <div class="post-header">
+                <div class="speaker-photo-wrap">
+                    <img src="images/voorhoede.png" alt="Voorhoede">
+                </div>
+                <div class="post-meta-wrap">
+                  <div class="post-meta">
+                    <span class="post-tag">Weekly Nerd</span>
+                    <span class="post-dot">·</span>
+                    <span class="post-date">Voorhoede</span>
+                  </div>
+                  <h3 class="post-title">Voorhoede — CSS, Toegankelijkheid & Offline-first PWA</h3>
+                  <p class="post-expand-hint">Drie sprekers over creatieve CSS, digitale toegankelijkheid en het bouwen van een offline-first Progressive Web App.</p>
+                </div>
+              </div>
+            </summary>
+            <div class="post-notes">
+
+              <h4>Marleen — Art Power Kyobashi & CSS mix-blend-mode</h4>
+              <p>Als developer kom je niet per se aan het design, maar je kunt wel interessante insteken hebben. Ze liet zien hoe <code>mix-blend-mode</code> in CSS gebruikt kan worden voor creatieve visuele effecten, zoals bij het project Art Power Kyobashi.</p>
+
+              <h4>Peter — Toegankelijkheid & fysieke impact</h4>
+              <p>Senior developer en accessibility specialist. Digitale dingen kunnen fysiek impact hebben op gebruikers — iets om altijd in je achterhoofd te houden bij het bouwen van interfaces.</p>
+
+              <h4>Bas — Offline-first PWA</h4>
+              <p>Bas bouwde een Progressive Web App om liften te inspecteren — offline-first, zodat het ook werkt zonder internetverbinding. Je moet vooraf weten welke data je nodig hebt om bepaalde pagina's te kunnen tonen.</p>
+
+              <h4>1. Kernprincipes</h4>
+              <ul>
+                <li>Start bij geen internet</li>
+                <li>Lokaal opslaan</li>
+              </ul>
+
+              <h4>2. Gebruikersvoordelen</h4>
+              <ul>
+                <li>Altijd toegang</li>
+                <li>Snellere interface (geen wachttijd)</li>
+                <li>Besparing op data en batterij</li>
+              </ul>
+
+              <h4>3. Uitdagingen & oplossingen</h4>
+              <ul>
+                <li>Conflictbeheer</li>
+                <li>Slimme caching & data pruning</li>
+                <li>Duidelijke sync-status (feedback aan de gebruiker)</li>
+              </ul>
+
+              <h4>4. Wanneer kiezen voor offline-first?</h4>
+              <ul>
+                <li>Slechte connectiviteit verwacht</li>
+                <li>Kritieke data-toegang vereist</li>
+                <li>Productiviteits- en field tools</li>
+              </ul>
+
+              <h4>Essentiële webtechnologie</h4>
+              <ol>
+                <li><strong>Service workers & caching</strong> — tussenlaag voor netwerkverzoeken. Cache first voor statisch, network first voor dynamisch.</li>
+                <li><strong>Local storage & databases</strong> — IndexedDB voor complexe structuren, localStorage voor simpele key-values.</li>
+                <li><strong>Synchronisatieframeworks (optioneel)</strong> — Firebase Firestore, AWS AppSync of Realm automatiseren het opslaan. Vaak gebruiken ze een API ervoor.</li>
+              </ol>
+
+              <h4>Implementatie best practices</h4>
+              <ol>
+                <li>Progressive enhancement</li>
+                <li>Cache validation</li>
+                <li>Background sync — zet dingen klaar wanneer je offline bent, en zodra je online bent laad het op. De app synchroniseert zonder te storen zodra de verbinding herstelt.</li>
+                <li>Error handling & retries</li>
+                <li>Performance optimisation</li>
+              </ol>
+
+              <p>Tip: in DevTools kun je dingen downloaden voor offline gebruik (onder Application — bewerken als admin).</p>
+            </div>
+            <div class="post-footer">
+              <span class="post-footer-item">Reply to this thread</span>
+            </div>
+          </details>
+        </div>
+      </article>
 
     </section>
 
-    <!-- 
+    <!--
          SMASHING CONF -->
     <section class="board" id="smashing">
       <div class="board-header">
         <div class="board-meta">
           <span class="board-tag">r/smashing-conf</span>
           <h2 class="board-title">Smashing Conference</h2>
-          <p class="board-desc">Two days. A lot of talks. Here's what happened.</p>
+          <p class="board-desc">First conference ever!!!</p>
         </div>
         <div class="board-stats">
-          <span>2 posts</span>
+          <span>1 post</span>
         </div>
       </div>
 
-      <!-- Day 1 -->
+      <!-- Combined -->
       <article class="post" id="post-smashing-1">
         <div class="vote-col">
           <button class="vote-btn up" aria-label="Upvote" data-post="post-smashing-1" data-dir="up">▲</button>
@@ -568,37 +811,21 @@
           <button class="vote-btn down" aria-label="Downvote" data-post="post-smashing-1" data-dir="down">▼</button>
         </div>
         <div class="post-body">
-          <div class="post-meta">
+          <!-- <div class="post-meta">
             <span class="post-tag">Smashing Conf</span>
             <span class="post-dot">·</span>
-            <span class="post-date">Day 1</span>
-          </div>
-          <h3 class="post-title">Day 1</h3>
+            <span class="post-date">Dag 1 &amp; 2</span>
+          </div> -->
+          <h3 class="post-title">Smashing Conference</h3>
           <div class="post-notes">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ex ea deleniti doloribus repellat quis facere architecto? Possimus, officia repudiandae quisquam harum unde perspiciatis! Ullam officiis labore porro ratione perferendis.</p>
-          </div>
-          <div class="post-footer">
-            <span class="post-footer-item">Reply to this thread</span>
-          </div>
-        </div>
-      </article>
+            <p>Dit was mijn eerste congres ooit, dus ik wist niet precies wat ik kon verwachten. Ik ging er met een open blik naartoe en was gewoon benieuwd wat er op me afkwam.</p>
+            <p>Over het algemeen was het erg leuk. De talks waren interessant en ik heb er zeker wat uit kunnen halen, zowel qua inspiratie als concrete dingen om mee te nemen naar mijn eigen werk.</p>
 
-      <!-- Day 2 -->
-      <article class="post" id="post-smashing-2">
-        <div class="vote-col">
-          <button class="vote-btn up" aria-label="Upvote" data-post="post-smashing-2" data-dir="up">▲</button>
-          <span class="vote-count" data-post="post-smashing-2">0</span>
-          <button class="vote-btn down" aria-label="Downvote" data-post="post-smashing-2" data-dir="down">▼</button>
-        </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span class="post-tag">Smashing Conf</span>
-            <span class="post-dot">·</span>
-            <span class="post-date">Day 2</span>
-          </div>
-          <h3 class="post-title">Day 2</h3>
-          <div class="post-notes">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad dolorum repudiandae nihil nemo, atque animi reiciendis odio dolores possimus similique adipisci esse incidunt eveniet error molestias, eius quos quaerat repellat.</p>
+            <h4>Wat opviel</h4>
+            <p>Een groot deel van de talks ging over AI. Dat is begrijpelijk gezien hoe veel er op dit moment over wordt gesproken, maar het voelde soms wel alsof het de boventoon voerde. Daarnaast lag de focus duidelijk meer op UX design dan op web development. Als developer hoopte ik op wat meer technische diepgang, maar dat was niet altijd aanwezig.</p>
+
+            <h4>Conclusie</h4>
+            <p>Ondanks die kanttekeningen was Smashing Conference een goede ervaring. Het was fijn om te zien hoe andere mensen in het vakgebied denken en werken. Voor een eerste congres zeker de moeite waard.</p>
           </div>
           <div class="post-footer">
             <span class="post-footer-item">Reply to this thread</span>
@@ -615,14 +842,13 @@
         <div class="board-meta">
           <span class="board-tag">r/the-web-you-want</span>
           <h2 class="board-title">The Web You Want</h2>
-          <p class="board-desc">But is it really the web YOU want...</p>
+          <p class="board-desc">The web you want... A web you want... The web I want...?</p>
         </div>
         <div class="board-stats">
-          <span>2 posts</span>
+          <span>1 post</span>
         </div>
       </div>
 
-      <!-- Day 1 -->
       <article class="post" id="post-web-1">
         <div class="vote-col">
           <button class="vote-btn up" aria-label="Upvote" data-post="post-web-1" data-dir="up">▲</button>
@@ -630,14 +856,23 @@
           <button class="vote-btn down" aria-label="Downvote" data-post="post-web-1" data-dir="down">▼</button>
         </div>
         <div class="post-body">
-          <div class="post-meta">
+          <!-- <div class="post-meta">
             <span class="post-tag">The Web You Want</span>
             <span class="post-dot">·</span>
-            <span class="post-date">Day 1</span>
-          </div>
-          <h3 class="post-title">Day 1</h3>
+            <span class="post-date">Dag 1 &amp; 2</span>
+          </div> -->
+          <h3 class="post-title">The Web You Want</h3>
           <div class="post-notes">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, quam earum iusto inventore iste natus quibusdam architecto veniam sit repellendus, qui blanditiis fuga suscipit delectus sint eligendi necessitatibus accusantium veritatis.</p>
+            <p>The Web You Want is een conference georganiseerd door Vasilis, en wordt gewoon gegeven op de HvA zelf. Dat maakt het al meteen een beetje anders dan een grote commerciële conferentie, het voelt toegankelijker en persoonlijker.</p>
+            <p>Over twee dagen spraken: Cyd Stumpel, Hidde de Vries, Jeremy Keith, Johannes Odland, Julie Blanc, Justus Sturkenboom, Léonie Watson, Marleen Stikker, Niels Leenheer, Sanne Peters en Sara Joy.</p>
+
+            <h4>Dag 1</h4>
+            <p>De talk van Justus Sturkenboom was erg filosofisch. De vraag "is het écht het web dat jíj wilt?" raakte iets, het zet je aan het denken over wie het web eigenlijk voor maakt en waarom. Een interessante invalshoek die ik niet verwachtte.</p>
+            <p>Niels Leenheer liet zien wat je allemaal nog meer kunt doen met CSS buiten het maken van websites. De laserklok die hij demonstreerde was echt cool en een goed voorbeeld van hoe ver je CSS kunt pushen als je creatief bent.</p>
+
+            <h4>Dag 2</h4>
+            <p>De tweede dag zat vol met informatie. Sara Joy sprak over thema's op het web en dat deed me realiseren dat niet alles zo strak en gepolijst hoeft te zijn. Er is ruimte voor persoonlijkheid en ruwere esthetiek.</p>
+            <p>Johannes Odland gebruikte een analoge camera als metafoor voor het web. Als analoge cameragebruiker zelf snapte ik precies waar hij naartoe wilde. De parallellen kloppen en het was een verfrissende manier om over het web te praten.</p>
           </div>
           <div class="post-footer">
             <span class="post-footer-item">Reply to this thread</span>
@@ -645,25 +880,46 @@
         </div>
       </article>
 
-      <!-- Day 2 -->
-      <article class="post post--locked" id="post-web-2" aria-disabled="true">
+    </section>
+
+    <section class="board" id="css-day">
+      <div class="board-header">
+        <div class="board-meta">
+          <span class="board-tag">r/css-day</span>
+          <h2 class="board-title">CSS Day</h2>
+          <p class="board-desc">A full day dedicated to CSS. Nothing else.</p>
+        </div>
+        <div class="board-stats">
+          <span>1 post</span>
+        </div>
+      </div>
+
+      <article class="post" id="post-css-day-1">
         <div class="vote-col">
-          <button class="vote-btn up" aria-label="Upvote" disabled>▲</button>
-          <span class="vote-count">–</span>
-          <button class="vote-btn down" aria-label="Downvote" disabled>▼</button>
+          <button class="vote-btn up" aria-label="Upvote" data-post="post-css-day-1" data-dir="up">▲</button>
+          <span class="vote-count" data-post="post-css-day-1">0</span>
+          <button class="vote-btn down" aria-label="Downvote" data-post="post-css-day-1" data-dir="down">▼</button>
         </div>
         <div class="post-body">
-          <div class="post-meta">
-            <span class="post-tag">The Web You Want</span>
+          <!-- <div class="post-meta">
+            <span class="post-tag">CSS Day</span>
             <span class="post-dot">·</span>
-            <span class="post-date">Day 2</span>
-          </div>
-          <h3 class="post-title">Day 2</h3>
-          <div class="post-notes post-notes--locked">
-            <p class="locked-msg">...</p>
+            <span class="post-date">CSS Day</span>
+          </div> -->
+          <h3 class="post-title">CSS Day</h3>
+          <div class="post-notes">
+            <p>CSS Day was een congress waar ik al eerder van had gehoord en waar ik ooit naartoe wilde. Dat moment kwam eerder dan verwacht: op school werd een CSS battle georganiseerd, en ook al had ik dik verloren, mocht iedereen die meegedaan had naar CSS Day. Beste verlies ooit.</p>
+            <p>De sfeer was meteen goed. Mooie locatie, fijne energie in de zaal en, het belangrijkste, alles ging over CSS. Niets anders. Daardoor was mijn aandacht er volledig bij, van talk één tot het einde. Alle sprekers brachten hun stof over met een energie die aanstekelijk was.</p>
+
+            <h4>Dag 1 </h4>
+            <p>De talk van Lyra Rebane was direct een van de hoogtepunten. Ze begon met een uitleg over een game die ze had gebouwd met alleen het <code>&lt;details&gt;</code> element. Creatief en een beetje gestoord op de beste manier. Daarna liet ze zien hoe ze een CPU had nagebouwd in CSS.</p>
+
+            <h4>Dag 2 </h4>
+            <p>Op dag twee was het leuk om Kevin Powell terug te zien (eerder gezien op Smashing Conf) en Niels Leenheer opnieuw te horen (eerder bij The Web You Want). Niels liet dit keer CSS Doom zien.</p>
+            <p>De dag werd afgesloten door Una Kravets en Adam Argyle, en die twee hadden samen een energie die de zaal meenam. Waanzinnige presentatie, waardevolle inhoud. Een perfecte afsluiting van twee dagen CSS.</p>
           </div>
           <div class="post-footer">
-            <span class="post-footer-item">meow</span>
+            <span class="post-footer-item">Reply to this thread</span>
           </div>
         </div>
       </article>
